@@ -18,7 +18,7 @@ def help
   puts "- exit : exits this program"
 end
 
-def list(s)
+def list(songs)
   songs.length.times{|index| puts "#{index + 1}. #{songs[index]}"}
 end
 
@@ -27,7 +27,7 @@ def findSong(songs_list,song_name)
  nil
 end
 
-def play(s)
+def play(songs)
   numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
   puts "Please enter a song name or number:"
   choice = gets.strip;
@@ -47,11 +47,11 @@ def run
     case choice
     
     when "play"
-      play($songs)
+      play
     when "help"
       help
     when "list"
-      list($songs)
+      list
     when "exit"
       exit_jukebox
       break
