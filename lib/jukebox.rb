@@ -42,7 +42,6 @@ end
 def run
   while true do 
     puts "Please enter a command:"
-    
     choice = gets.strip;
     case choice
     
