@@ -49,7 +49,7 @@ def run
     when "play"
       play($songs)
     when "help"
-      help($songs)
+      help
     when "list"
       list($songs)
     when "exit"
